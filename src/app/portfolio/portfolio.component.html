@@ -6,9 +6,9 @@
     </div>
     <div class="projects-container">
     
-        <div class="project" *ngFor="let project of projects; let id = index" id="id" (click)="displayModal(id)" >
-            <div class="project-content-wrapper">
-                <div class="project-cover-container">
+        <div class="project no-overflow" *ngFor="let project of projects; let id = index" id="id" (click)="displayModal(id)" >
+            <div class="project-content-wrapper text-center">
+                <div class="project-cover-container no-overflow">
                     <img src="{{ project.coverImage }}" alt="{{ project.title }}" class="project-cover">
                 </div>
                 <h4 class="project-tag">{{ project.tags[0] }}</h4>

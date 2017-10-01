@@ -54,12 +54,9 @@ $orange: #f7941d;
 	margin-top: -100vh;
 	z-index: -1;
 	background-image: url('/assets/landing-cover2.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
 	background-position: center top;
 	
 	.logo-container {
-		
 		h1, h2{
 			margin: 5px;
 		}
@@ -96,7 +93,7 @@ $orange: #f7941d;
 			right: 0;
 			height: 50px;
 			width: 30px;
-			bottom: 99px;
+			bottom: 140px;
 			background-color: transparent;
 			border: 2px solid white;
 			border-radius: 20px;

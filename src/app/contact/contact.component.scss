@@ -2,10 +2,10 @@ $black: #242424;
 $orange: #f7941d;
 
 section {
+	padding: 12vh 0 12vh 0;
 	color: white;
 	background-color: $black;
 	.section-header{
-		padding-top: 60px;
 		.sub-heading {
 			color: white;
 		}
@@ -14,14 +14,9 @@ section {
 		}
 	}
 	.section-content {
-		text-align: center;
 		.email-me-btn {
 			background-color: $orange;
-			margin-left: auto;
-			margin-right: auto;
-			// width: 18vw;
 			padding: 15px 20px 15px 20px;
-			// height: 6vh;
 			border: 1px solid $orange;
 			transition: all 0.2s ease-out;
 		}

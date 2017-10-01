@@ -2,7 +2,6 @@
 	padding-bottom: 10vh;
 }
 .projects-container {
-	padding-top: 0;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -10,8 +9,6 @@
 	flex-wrap: wrap;
 }
 .project {
-	overflow: hidden;
-	text-align: center;
 	height: 350px;
 	width: 33.33%;
 	cursor: pointer;
@@ -22,13 +19,12 @@
 		}
 		height: 275px;
 		margin-bottom: 10px;
-		overflow: hidden;	
 	}
 	h3, h4 {
 		margin: 2px;
 	}
 	.project-tag {
-		font-family: 'mistral';
+		font-family: 'roboto';
 	}	
 }
 .project:hover {

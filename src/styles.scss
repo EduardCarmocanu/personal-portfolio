@@ -17,21 +17,22 @@ section {
 	padding-bottom: 10vh;
 	width: 100%;
 }
-
-.sub-heading {
-	color: $orange;
-	margin: 0;
-}
-p {
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.4em;
-	font-size: 16px;
+.has-cover{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 a{
 	text-decoration: none;
 	color: $black;
 	font-style: italic;
 	
+}
+// TEXT
+p {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.4em;
+	font-size: 16px;
 }
 h1 {
 	font-size: 4em;
@@ -57,19 +58,40 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 100;
 }
+.text-center{
+	text-align: center;
+}
+// END TEXT
+
+// OVERFLOW
+.no-overflow {
+	overflow: hidden;
+}
+// END OVERFLOW
+
 
 .section-header {
 	padding-top: 20px;
 	text-align: center;
+	.sub-heading {
+		color: $orange;
+		margin: 0;
+	}
 	h2 {
 		margin: 0;
 	}
 	h1 {
 		margin: 0;
 	}
-}	
+}
+
+
+// MISC
 .lighter {
 	opacity: 0.3;
+}
+.highlight{
+	color: $orange;
 }
 .berlin {
 	font-family: 'berlin';
@@ -78,9 +100,16 @@ h1, h2, h3, h4, h5, h6 {
 	color: $orange;
 	font-weight: 800;
 }
-.highlight{
-	color: $orange;
+.round {
+	border-radius: 100%;
 }
+.center-block {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+// END MISC
+
+// BUTTONS
 .btn {
 	padding: 15px;
     width: 130px;
@@ -91,17 +120,13 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: normal;
 	text-align: center;
 }
+// END BUTTONS
 
 .profile-image-container {
 	overflow: hidden;
-	border-radius: 100%;
 	width: 150px;
 	height: 150px;
 	background-image: url('/assets/profile-pics.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	margin: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
