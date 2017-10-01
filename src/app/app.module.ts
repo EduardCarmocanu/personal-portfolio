@@ -1,4 +1,3 @@
-import { Routing } from './app.routing';
 import { ProjectsService } from './projects.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -29,7 +28,6 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
   ],
   imports: [
     BrowserModule,
-    Routing
   ],
   providers: [
     ProjectsService
