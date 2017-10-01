@@ -1,0 +1,14 @@
+<section id="yup-landing" >
+  <div class="logo-container" style="text-align: center; color: white;">
+    <h1>Eduard Carmocanu</h1>
+    <h2>Front end developer</h2>
+  </div>
+  <div class="social-media">
+    <a *ngFor="let icon of iconsData" href="{{ icon.href }}" target="_blank">
+      <img src="{{ icon.src }}" alt="{{ icon.alt }}">
+    </a>
+  </div>
+  <div class="scroll-down-container">
+      <button type="button" class="scroll_down" id="scroll_down" yupScroller [targetEl]="'#yup-about'"></button>
+  </div>
+</section>

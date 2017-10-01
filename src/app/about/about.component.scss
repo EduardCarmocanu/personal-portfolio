@@ -1,0 +1,48 @@
+$orange: #f7941d;
+$black: #242424;
+
+#yup-about {
+	margin-top: 100vh;
+	text-align: center;
+	.section-header{
+		padding-top: 10vh;
+	}
+}
+.section-content {
+	p {
+		// font-size: 1.1em;
+		line-height: 1.6em;
+	}
+}
+.about-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: space-around;
+	a {
+		color: orange;
+	}
+	.resume-btn {
+		background-color: rgb(235, 235, 235);
+		transition: transform 0.2s ease-out;
+	}
+	.resume-btn:hover {
+		transform: scale(1.1, 1.1);
+	}
+	.hire-me-btn {
+		background-color: $black;
+		transition: transform 0.2s ease-out;
+
+	}
+	.hire-me-btn:hover {
+		transform: scale(1.1, 1.1);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#yup-about {
+		margin-top: 0;
+		.section-content{
+			padding: 5px;
+		}
+	}
+}

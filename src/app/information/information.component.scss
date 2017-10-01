@@ -1,0 +1,41 @@
+$orange: #f7941d;
+
+.info-columns-container{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
+	.info-column {
+		width: 33.3333%;
+		padding: 10px;
+		.service-wrapper{
+			display: flex;
+			p{
+				font-size: 13px;
+				line-height: normal;
+				padding-left: 7px;
+			}
+			
+		}
+		
+	}	
+}
+
+@media only screen and (max-width: 768px) {
+	.info-columns-container{
+		width: 100%;
+		flex-wrap: wrap;
+		.info-column {
+			text-align: center;
+			width: 100%;
+			padding: 20px;
+			.service-wrapper {
+				justify-content: center;
+			}
+			.tags-wrapper {
+				justify-content: center;
+			}
+		}
+	}
+}

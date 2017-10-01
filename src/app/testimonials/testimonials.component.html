@@ -1,0 +1,29 @@
+<section id="yup-testimonials">
+  <div class="section-header">
+    <h3 class="sub-heading">say what?</h3>
+    <h1 class="main-heading">~ Testimonials ~</h1>
+  </div>
+  <div class="testimonials-container">
+    <div class="testimonials-control">
+      <img src="../assets/arrow-left.png" (click)="changeTestimonial('left')">
+    </div>
+    <div class="testimonials-carousel">
+      <div class="carousel-content-container">
+        <div class="testimonial" [style.opacity]="opacity">
+          <div class="client-image-container">
+            <img src="http://via.placeholder.com/80x80" alt="client-image">
+          </div>
+          <p>
+            {{ testimonials[activeTestimonial].testimonial }}
+          </p>
+          
+          <h2>{{ testimonials[activeTestimonial].author }}</h2>
+          <h4 class="client-role">{{ testimonials[activeTestimonial].role }}</h4>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-control">
+        <img src="../assets/arrow-right.png" (click)="changeTestimonial('right')">
+    </div>
+  </div>
+</section>

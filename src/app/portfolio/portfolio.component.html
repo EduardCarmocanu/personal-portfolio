@@ -1,0 +1,21 @@
+
+<section id="yup-portfolio">
+    <div class="section-header">
+        <h3 class="sub-heading">what?</h3>
+        <h1 class="main-heading">~ Portfolio ~</h1>
+    </div>
+    <div class="projects-container">
+    
+        <div class="project" *ngFor="let project of projects; let id = index" id="id" (click)="displayModal(id)" >
+            <div class="project-content-wrapper">
+                <div class="project-cover-container">
+                    <img src="{{ project.coverImage }}" alt="{{ project.title }}" class="project-cover">
+                </div>
+                <h4 class="project-tag">{{ project.tags[0] }}</h4>
+                <h3 class="project-title">{{ project.title }}</h3>
+            </div>
+        </div>
+</div>
+
+
+</section>

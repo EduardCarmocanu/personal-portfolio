@@ -1,0 +1,150 @@
+$orange: #f7941d;
+
+@keyframes scale{
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.2, 1.2);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+@keyframes scroll_down_btn-animation {
+	0% {
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes scroll_down_btn-animation {
+	0% {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		-webkit-transform: translate(0, 20px);
+		transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#yup-landing {
+	padding-top: 0;
+	height: 100vh;
+	position: fixed;
+	margin-top: -100vh;
+	z-index: -1;
+	background-image: url('/assets/landing-cover2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	
+	.logo-container {
+		
+		h1, h2{
+			margin: 5px;
+		}
+		h2 {
+			font-family: berlin;
+		}
+		h1 {
+			font-size: 5em;
+			color: $orange;
+		}
+		h2{
+			font-size: 2em;
+		}
+		margin-top: 30vh;
+	}
+	.social-media {
+		display: flex;
+		justify-content: center;
+		img {
+			width: 40px;
+			margin: 15px;
+			transition: transform .2s ease-out;
+		}
+		img:hover {
+			transform: scale(0.8, 0.8);
+		}
+	}
+	.scroll-down-container {
+		button.scroll_down {
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			height: 50px;
+			width: 30px;
+			bottom: 99px;
+			background-color: transparent;
+			border: 2px solid white;
+			border-radius: 20px;
+			cursor: pointer;
+			outline: none;
+		}
+		button.scroll_down:before {
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			content: '';
+			width: 6px;
+			height: 6px;
+			margin-left: -3px;
+			background-color: #fff;
+			border-radius: 100%;
+			-webkit-animation: scroll_down_btn-animation 2s infinite;
+			animation: scroll_down_btn-animation 2s infinite;
+			box-sizing: border-box;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#yup-landing {
+		position: relative;
+		margin-top: 0;
+		z-index: initial;
+		.logo-container {
+			margin-top: 0;
+			padding-top: 25vh;
+			width: 100%;
+			h1 {
+				font-size: 3em;
+			}
+			h2 {
+				font-size: 1.2em;
+			}
+		}
+	}
+	@media screen and (orientation: landscape) {
+		.scroll-down-container {
+			button.scroll_down {
+				bottom: 40px !important;
+			}
+		}
+	}
+}
+
+
+

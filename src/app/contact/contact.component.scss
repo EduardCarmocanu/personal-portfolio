@@ -1,0 +1,47 @@
+$black: #242424;
+$orange: #f7941d;
+
+section {
+	color: white;
+	background-color: $black;
+	.section-header{
+		padding-top: 60px;
+		.sub-heading {
+			color: white;
+		}
+		.main-heading {
+			color: $orange;
+		}
+	}
+	.section-content {
+		text-align: center;
+		.email-me-btn {
+			background-color: $orange;
+			margin-left: auto;
+			margin-right: auto;
+			// width: 18vw;
+			padding: 15px 20px 15px 20px;
+			// height: 6vh;
+			border: 1px solid $orange;
+			transition: all 0.2s ease-out;
+		}
+		.email-me-btn:hover {
+			background-color: $black;
+			color: $orange;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.section-content {
+		.email-me-btn {
+			width: 100px !important;
+			height: 20px !important;
+			font-size: 1em;
+		}
+	}
+	section {
+		padding-bottom: 0.5vh;
+	}
+
+}
