@@ -15,10 +15,13 @@ export class ProjectModalComponent{
   constructor(projectsService: ProjectsService) { 
     this.projects = projectsService.getProjects();
   }
-
   closeModal() {
-    document.querySelector('#modal-content').scrollTop = 0; 
     // Scroll modal back to the top
+    document.querySelector('#modal-content').scrollTop = 0; 
+
+    // Restored scrolling to the page
+    document.querySelector('body').style.overflow = 'initial';
+
     this.modalClicked.emit();
   }
 

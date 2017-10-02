@@ -14,6 +14,9 @@ export class AppComponent {
   displayModal(id) {
     this.currentId = id;
     this.modalDisplay = true;
+
+    // Stops the background from scrolling when modal is open;
+    document.querySelector('body').style.overflow = 'hidden';
   }
   closeModal() {
     this.modalDisplay = false;
