@@ -6,161 +6,169 @@ $gray: #6a6e7c;
 
 @import url('./sass/fonts.scss');
 @import url('./sass/colours.scss');
-
-body {
-	color: $black;
-	padding: 0;
-	margin: 0;
-}
-section {
-	background-color: white;
-	padding-bottom: 10vh;
-	width: 100%;
-}
-.has-cover{
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-a{
-	text-decoration: none;
-	color: $black;
-	font-style: italic;
+	.scrollBar::-webkit-scrollbar {
+		width: 5px;
+		background-color: currentColor;
+	}
 	
-}
-// TEXT
-p {
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.4em;
-	font-size: 16px;
-}
-h1 {
-	font-size: 4em;
-	font-weight: 100;
-}
-h2 {
-	font-size: 2.5em;
-}
-h1, h2{
-	font-family: 'Roboto', sans-serif;
-}
-
-h3 {
-	font-size: 1.5em;
-}
-h3, h4 {
-	font-family: 'berlin';
-}
-h6 {
-	font-family: roboto;
-
-}
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 100;
-}
-.text-center{
-	text-align: center;
-}
-// END TEXT
-
-// OVERFLOW
-.no-overflow {
-	overflow: hidden;
-}
-// END OVERFLOW
-
-
-.section-header {
-	padding-top: 20px;
-	text-align: center;
-	.sub-heading {
-		color: $orange;
+	.scrollBar::-webkit-scrollbar-thumb {
+		background: #666; 
+	}
+	
+	body {
+		color: $black;
+		padding: 0;
 		margin: 0;
 	}
-	h2 {
-		margin: 0;
+	section {
+		background-color: white;
+		padding-bottom: 10vh;
+		width: 100%;
+	}
+	.has-cover{
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	a{
+		text-decoration: none;
+		color: $black;
+		font-style: italic;
+		
+	}
+	// TEXT
+	p {
+		font-family: 'Roboto', sans-serif;
+		line-height: 1.4em;
+		font-size: 16px;
 	}
 	h1 {
-		margin: 0;
+		font-size: 4em;
+		font-weight: 100;
 	}
-}
-
-
-// MISC
-.lighter {
-	opacity: 0.3;
-}
-.highlight{
-	color: $orange;
-}
-.berlin {
-	font-family: 'berlin';
-}
-.highlight-bold {
-	color: $orange;
-	font-weight: 800;
-}
-.round {
-	border-radius: 100%;
-}
-.center-block {
-	margin-left: auto !important;
-	margin-right: auto !important;
-}
-// END MISC
-
-// BUTTONS
-.btn {
-	padding: 15px;
-    width: 130px;
-    font-family: berlin;
-	font-size: 1.5em;
-	margin: 10px;
-	margin-top: 30px;
-	font-style: normal;
-	text-align: center;
-}
-// END BUTTONS
-
-.profile-image-container {
-	overflow: hidden;
-	width: 150px;
-	height: 150px;
-	background-image: url('/assets/profile-pics.png');
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.tags-wrapper {
-	display: flex;
-	align-items: flex-start;
-	flex-direction: row;
-	flex-wrap: 	wrap;
-	.tag {
-		border: 1px solid lightgrey;
-		margin: 5px !important;
-		padding: 10px;
-		border-radius: 15px;
-		color: lightgrey;	
-		text-align: center;	
-		cursor: pointer;
-		transition: all 0.2s ease-out;
-		max-width: 100%;
+	h2 {
+		font-size: 2.5em;
 	}
-	.tag:hover {
+	h1, h2{
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	h3 {
+		font-size: 1.5em;
+	}
+	h3, h4 {
+		font-family: 'berlin';
+	}
+	h6 {
+		font-family: roboto;
+		
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 100;
+	}
+	.text-center{
+		text-align: center;
+	}
+	// END TEXT
+	
+	// OVERFLOW
+	.no-overflow {
+		overflow: hidden;
+	}
+	// END OVERFLOW
+	
+	
+	.section-header {
+		padding-top: 20px;
+		text-align: center;
+		.sub-heading {
+			color: $orange;
+			margin: 0;
+		}
+		h2 {
+			margin: 0;
+		}
+		h1 {
+			margin: 0;
+		}
+	}
+	
+	
+	// MISC
+	.lighter {
+		opacity: 0.3;
+	}
+	.highlight{
 		color: $orange;
-		border: 1px solid $orange;
-		transform: scale(1.1, 1.1);
 	}
-}
-
-@media only screen and (max-width: 768px) {
-
-	h1{
-		font-size: 2.8em;
+	.berlin {
+		font-family: 'berlin';
 	}
+	.highlight-bold {
+		color: $orange;
+		font-weight: 800;
+	}
+	.round {
+		border-radius: 100%;
+	}
+	.center-block {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+	// END MISC
+	
+	// BUTTONS
 	.btn {
-		width: 100px;
-		font-size: 1.2em;
-		margin: 5px;
+		padding: 15px;
+		width: 130px;
+		font-family: berlin;
+		font-size: 1.5em;
+		margin: 10px;
+		margin-top: 30px;
+		font-style: normal;
+		text-align: center;
 	}
-}
+	// END BUTTONS
+	
+	.profile-image-container {
+		overflow: hidden;
+		width: 150px;
+		height: 150px;
+		background-image: url('/assets/profile-pics.png');
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.tags-wrapper {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: 	wrap;
+		.tag {
+			border: 1px solid lightgrey;
+			margin: 5px !important;
+			padding: 10px;
+			border-radius: 15px;
+			color: lightgrey;	
+			text-align: center;	
+			cursor: pointer;
+			transition: all 0.2s ease-out;
+			max-width: 100%;
+		}
+		.tag:hover {
+			color: $orange;
+			border: 1px solid $orange;
+			transform: scale(1.1, 1.1);
+		}
+	}
+	
+	@media only screen and (max-width: 768px) {
+		
+		h1{
+			font-size: 2.8em;
+		}
+		.btn {
+			width: 100px;
+			font-size: 1.2em;
+			margin: 5px;
+		}
+	}
