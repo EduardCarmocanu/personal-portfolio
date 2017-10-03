@@ -7,15 +7,18 @@ $gray: #6a6e7c;
 @import url('./sass/fonts.scss');
 @import url('./sass/colours.scss');
 
-
-.scrollBar::-webkit-scrollbar {
-	width: 5px;
-	background-color: currentColor;
+@media only screen and (min-width: 768px) {
+	.scrollBar::-webkit-scrollbar {
+		width: 5px;
+		background-color: currentColor;
+	}
+	
+	.scrollBar::-webkit-scrollbar-thumb {
+		background: #666; 
+	}
 }
+	
 
-.scrollBar::-webkit-scrollbar-thumb {
-	background: #666; 
-}
 
 body {
 	color: $black;
