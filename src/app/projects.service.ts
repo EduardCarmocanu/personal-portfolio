@@ -9,7 +9,7 @@ export class ProjectsService {
       tags: ['JS', 'JQuery', 'CSS', 'HTML', 'Personal Branding'],
       date: 'December 2016',
       description: 'For the 1st semester exam me and my fellow student coleagues, have been given the challenge to brand ourselves and create a personal portfolio website in the process of it. The purpose of the exam was to evaluate our competences in regards of design and development. Moreover during the project one of the requirements was to convey your own brand that you want to sell to a company that you would like to work for.',
-      link: 'http://eduards.space',
+      link: 'http://www.eduards.space/projects/1st-semester-exam/',
       coverImage: '/assets/portfolio-website.png'
     },
     {
