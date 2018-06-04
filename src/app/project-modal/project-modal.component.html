@@ -4,7 +4,8 @@
     <div class="modal-details-wrapper">
       <h4 class="lighter">{{ projects[id].date }}</h4>
       <h2>{{ projects[id].title }}</h2>
-      <p>{{ projects[id].subTitle }}</p>
+	  <p>{{ projects[id].subTitle }}</p>
+	  <a href="{{ projects[id].link }}" id="project-link" target="_blank"><h4>CLICK TO SEE PROJECT</h4></a>
       <div class="tags-wrapper">
         <h3 class="skill tag" *ngFor="let tag of projects[id].tags">{{ tag }}</h3>
       </div>
@@ -12,9 +13,6 @@
       <p>
           {{ projects[id].description }}
       </p>
-      <a href="{{ projects[id].link }}" id="project-link"><h4>
-        {{ projects[id].link }}
-      </h4></a>
     </div>
   </div>
 </div>

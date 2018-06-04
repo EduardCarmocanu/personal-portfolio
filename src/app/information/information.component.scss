@@ -6,9 +6,10 @@ $orange: #f7941d;
 	flex-direction: row;
 	margin-left: auto;
 	margin-right: auto;
+	justify-content: center;
 	.info-column {
 		width: 33.3333%;
-		padding: 10px;
+		padding: 0 50px;
 		.service-wrapper{
 			display: flex;
 			p{
@@ -16,9 +17,10 @@ $orange: #f7941d;
 				line-height: normal;
 				padding-left: 7px;
 			}
-			
 		}
-		
+		ul {
+			font-style: italic;
+		}
 	}	
 }
 

@@ -6,7 +6,7 @@ export class ProjectsService {
     {
       title: 'Portfolio project', 
       subTitle: 'Personal portfolio project created for 1st semester exam at Multimedia design and communication',
-      tags: ['JS', 'JQuery', 'CSS', 'HTML', 'Personal Branding'],
+      tags: ['JS', 'CSS', 'HTML', 'Personal Branding'],
       date: 'December 2016',
       description: 'For the 1st semester exam me and my fellow student coleagues, have been given the challenge to brand ourselves and create a personal portfolio website in the process of it. The purpose of the exam was to evaluate our competences in regards of design and development. Moreover during the project one of the requirements was to convey your own brand that you want to sell to a company that you would like to work for.',
       link: 'http://www.eduards.space/projects/1st-semester-exam/',
@@ -22,13 +22,13 @@ export class ProjectsService {
       coverImage: '/assets/fjord.png'
     },
     {
-      title: 'Sam & the soulmates', 
-      subTitle: 'Convery a new band image the music band Sam & the soulmates',
-      tags: ['Branding', 'HTML', 'CSS', 'JS'],
-      date: 'March 2017',
-      description: 'This project was all about creating a new image for the jazz band Sam & the soulmates which resulted in a very colourfull "new age" style of the band that can be seen from the cover image. The band image was inspired from the colourful athmosphere that the jazz band created with the band member personalities and especially their music',
-      link: 'http://eduards.space/projects/module-2/',
-      coverImage: '/assets/sam.png'
+      title: 'Morningscore', 
+      subTitle: 'Participated in the development of the SEO analysis product, morningscore',
+      tags: ['React.JS', 'HTML', 'SASS', 'SaaS'],
+      date: 'November 2017 - May 2018',
+      description: 'During the collaboration on morningscore I have been responsible for the client side of the application as a front-end developer. The tasks that i have been handling range from UI components development and Optimizations to Identifying and addressing UX related isues discovered through data analysis or just user feedback',
+      link: 'https://morningscore.io/',
+      coverImage: '/assets/morningscore.png'
     },
 
     

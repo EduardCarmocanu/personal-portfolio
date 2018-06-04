@@ -1,67 +1,71 @@
 <section id="yup-information">
-  <div class="info-columns-container">
-      <div class="info-column">
-        <h2>Education &amp; work</h2>
-        <p>
-            2016 - Ongoing<br>
-            <span class="highlight-bold berlin">
-                Multimedia Design &amp;<br>
-                Communication<br>
-            </span>
-            at ERHVERVSAKADEMIETLILLEBÆLT
-            ODENSE(Denmark)
-        </p>
-        <p>
-            2017- Ongoing<br>
-            <span class="highlight-bold berlin">
-                Full Stack development<br>
-                Certification<br>
-            </span>
-            at FREE CODE CAMP<br>
-            <a href="https://www.freecodecamp.com<br>
-              /eduardcarmocanu">https://www.freecodecamp.com<br>
-            /eduardcarmocanu</a>
-        </p>
-      </div>
-      <div class="info-column">
-        <h2>What do I do</h2>
-        <p>
-            I Mainly build web applications but I’m not<br>
-            affraid of picking up photoshop and<br>
-            illustrator to create something innovative<br>
-        </p>
-        <div class="service-wrapper">
-            <img src="../assets/devs.png" alt="">
-            <div>
-                <p>Front-end Development</p>
-                <p>AngularJS, VueJS</p>
-            </div>
-        </div>
-        <div class="service-wrapper">
-            <img src="../assets/designs.png" alt="">
-            <div>
-                <p>User experience design</p>
-                <p>Photoshop, Illustrator</p>
-            </div>
-        </div>
-      </div>
-      
-      <div class="info-column">
-        <h2>What skills I have</h2>
-        <h3 style="color: gray">Development Skills</h3>
-        <div class="skills-container">
-            <div class="tags-wrapper">
-                <h3 *ngFor="let skill of developmentSkills" class="skill tag">{{ skill }}</h3>
-            </div>
-        </div>
-        <hr>
-        <h3 style="color: gray">Design Skills</h3>
-        <div class="skills-container">
-            <div class="tags-wrapper">
-                <h3 *ngFor="let skill of designSkills" class="skill tag">{{ skill }}</h3>
-            </div>
-          </div>
-      </div>
-  </div>
-  
+	<div class="info-columns-container">
+		<div class="info-column">
+			<h2>Work &amp; Education</h2>
+			<p>
+				<span class="highlight-fade">November 2017 - June 2018</span>
+				<br>
+				<span class="highlight-bold berlin highlight-large">
+					Front-end Developer
+					<br>
+				</span>
+				at Morning Train Technologies ApS
+				<br/>
+				<a href="https://morningtrain.dk/" target="_blank">
+					<span class="highlight-link highlight-small">company website</span>
+				</a>
+			</p>
+			<p>Tasks include:</p>
+			<ul>
+				<li>
+					<p>UI development</p>
+				</li>
+				<li>
+					<p>Client-side optimizations</p>
+				</li>
+				<li>
+					<p>User data analysis</p>
+				</li>
+				<li>
+					<p>Collaborate with design department to Address UX issues</p>
+				</li>
+			</ul>
+
+			<hr>
+
+			<p>
+				<span class="highlight-fade">September 2016 - June 2018</span>
+				<br>
+				<span class="highlight-bold berlin highlight-large">
+					Multimedia Design &amp;
+					<br> Communication
+					<br>
+				</span>
+				at ERHVERVSAKADEMIETLILLEBÆLT ODENSE(Denmark)
+				<br/>
+				<a href="https://www.eal.dk/international/education/full-degree-students/Programmes/ap-degree-programmes/multimedia-design-and-communication/"
+				 target="_blank">
+					<span class="highlight-link highlight-small">study programme</span>
+				</a>
+			</p>
+		</div>
+
+		<div class="info-column">
+			<h2>What skills I have</h2>
+			<h3 style="color: gray">Development Skills</h3>
+			<div class="skills-container">
+				<div class="tags-wrapper">
+					<h3 *ngFor="let skill of developmentSkills" class="skill tag">{{ skill }}</h3>
+				</div>
+			</div>
+			<hr>
+			<h3 style="color: gray">Design Skills</h3>
+			<div class="skills-container">
+				<div class="tags-wrapper">
+					<h3 *ngFor="let skill of designSkills" class="skill tag">{{ skill }}</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </section>

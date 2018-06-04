@@ -6,17 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./information.component.scss']
 })
 export class InformationComponent {
+	
   developmentSkills = [
-    'AngularJS',
-    'Vue.JS',
+	'React.JS',
+	'AngularJS',
     'HTML',
     'CSS',
     'JavaScript',
-    'PHP',
+	'PHP',
+	'Python',
+	'GIT',
+	'Webpack',
+	'Gulp'
   ];
   designSkills = [
+	'Usability Testing',
+	'UX Design',
+	'Design thinking',
     'Photoshop',
     'Illustrator',
-    'UX'
+    'Adobe XD'
   ];
 }
