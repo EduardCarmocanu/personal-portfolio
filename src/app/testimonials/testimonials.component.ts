@@ -11,7 +11,7 @@ export class TestimonialsComponent {
     {
       testimonial: 
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam sequi ducimus obcaecati aliquam eligendi enim, vero rem eveniet delectus, non eaque architecto doloribus',
-      imageSrc: '../assets/profile-pics.png',
+      imageSrc: './assets/profile-pics.png',
       author: 'John Doe', 
       role: 'developer'
     },
@@ -19,7 +19,7 @@ export class TestimonialsComponent {
     {
       testimonial: 
       'sit amet consectetur adipisicing elit. Adipisci magnam sequi ducimus obcaecati aliquam eligendi enim, vero rem eveniet delectus, non eaque architecto doloribus repudiandae? Maiores quos voluptatum tenetur reicie',
-      imageSrc: '../assets/profile-pics.png',
+      imageSrc: './assets/profile-pics.png',
       author: 'John Doe', 
       role: 'developer'
     },
@@ -27,7 +27,7 @@ export class TestimonialsComponent {
     {
       testimonial: 
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magnam sequi ducimus obcaecati aliquam eligendi',
-      imageSrc: '../assets/profile-pics.png',
+      imageSrc: './assets/profile-pics.png',
       author: 'John Doe', 
       role: 'developer'
     },
