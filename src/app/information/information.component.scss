@@ -21,6 +21,15 @@ $orange: #f7941d;
 		ul {
 			font-style: italic;
 		}
+		.tasks-headline {
+			font-weight: 600;
+		}
+		.tasks-list{
+			p {
+				margin: 0;
+				padding: 0
+			}
+		}
 	}	
 }
 
@@ -37,6 +46,13 @@ $orange: #f7941d;
 			}
 			.tags-wrapper {
 				justify-content: center;
+			}
+		}
+		.tasks-list{
+			list-style: none;
+			padding: 0;
+			p {
+				font-style: initial;
 			}
 		}
 	}
